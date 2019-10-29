@@ -29,6 +29,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="180dp"
                 android:fontFamily="sans-serif-black"
+                android:textAllCaps="true"
                 android:text="Welcome to Ailses"
                 android:textAlignment="center"
                 android:textColor="@color/colorBlack"
