@@ -5,4 +5,5 @@
     <string name="turn_on_gps">Turn On GPS</string>
     <string name="zip_code_number">Zip Code Number</string>
     <string name="city_name">City Name</string>
+    <string name="or">Or</string>
 </resources>
