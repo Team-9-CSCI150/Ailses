@@ -14,13 +14,14 @@
         android:scaleType="centerCrop"
         android:src="@drawable/background" />
 
-
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="wrap_content">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -29,11 +30,11 @@
                 android:layout_marginTop="180dp"
                 android:fontFamily="sans-serif-black"
                 android:textAllCaps="true"
-                android:text="@string/welcome_to_ailses"
+                android:text="Welcome to Ailses"
                 android:textAlignment="center"
                 android:textColor="@color/colorBlack"
                 android:textSize="50sp"
-                android:textStyle="bold" tools:targetApi="jelly_bean">
+                android:textStyle="bold">
 
             </TextView>
         </LinearLayout>
@@ -44,9 +45,14 @@
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="30dp"
             android:layout_marginLeft="40dp"
-            android:layout_marginRight="40dp">
+            android:layout_marginRight="40dp"
+            android:Orientation="vertical">
 
-
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layoutWeight="2">
 
                 <Button
                     android:id="@+id/Tutorial"
@@ -57,11 +63,11 @@
                     android:layout_marginBottom="5dp"
                     android:background="@drawable/element_outline"
                     android:layout_weight="1"
-                    android:text="@string/tutorial"
+                    android:text="Tutorial"
+                    android:onClick="TutorialPressed"
                     android:textStyle="bold"
                     android:textColor="@color/colorBlack"
-                    android:textSize="12sp"
-                    style="?android:attr/borderlessButtonStyle"/>
+                    android:textSize="12dp"/>
                 <Button
                     android:id="@+id/getStarted"
                     android:layout_width="150dp"
@@ -71,14 +77,15 @@
                     android:layout_marginBottom="5dp"
                     android:background="@drawable/element_outline"
                     android:layout_weight="1"
-                    android:text="@string/get_started"
+                    android:text="Get Started"
+                    android:onClick="GetstartedPressed"
                     android:textStyle="bold"
                     android:textColor="@color/colorBlack"
-                    android:textSize="12sp"
-                    style="?android:attr/borderlessButtonStyle"/>
+                    android:textSize="12dp"/>
 
-
+            </LinearLayout>
         </LinearLayout>
     </RelativeLayout>
 
 
+</RelativeLayout>
