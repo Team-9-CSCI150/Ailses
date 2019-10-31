@@ -46,8 +46,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="30dp"
             android:layout_marginLeft="40dp"
-            android:layout_marginRight="40dp"
-            android:Orientation="vertical">
+            android:layout_marginRight="40dp">
 
 
 
@@ -63,7 +62,8 @@
                     android:text="@string/tutorial"
                     android:textStyle="bold"
                     android:textColor="@color/colorBlack"
-                    android:textSize="12sp"/>
+                    android:textSize="12sp"
+                    style="?android:attr/borderlessButtonStyle"/>
                 <Button
                     android:id="@+id/getStarted"
                     android:layout_width="150dp"
@@ -76,7 +76,8 @@
                     android:text="@string/get_started"
                     android:textStyle="bold"
                     android:textColor="@color/colorBlack"
-                    android:textSize="12sp"/>
+                    android:textSize="12sp"
+                    style="?android:attr/borderlessButtonStyle"/>
 
             </LinearLayout>
     </RelativeLayout>
