@@ -10,7 +10,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:contentDescription="background image"
+        android:contentDescription="@string/background_image"
         android:scaleType="centerCrop"
         android:src="@drawable/background" />
 
@@ -31,7 +31,7 @@
                 android:layout_marginTop="180dp"
                 android:fontFamily="sans-serif-black"
                 android:textAllCaps="true"
-                android:text="Welcome to Ailses"
+                android:text="@string/welcome_to_ailses"
                 android:textAlignment="center"
                 android:textColor="@color/colorBlack"
                 android:textSize="50sp"
@@ -49,11 +49,7 @@
             android:layout_marginRight="40dp"
             android:Orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layoutWeight="2">
+
 
                 <Button
                     android:id="@+id/Tutorial"
@@ -67,7 +63,7 @@
                     android:text="@string/tutorial"
                     android:textStyle="bold"
                     android:textColor="@color/colorBlack"
-                    android:textSize="12dp"/>
+                    android:textSize="12sp"/>
                 <Button
                     android:id="@+id/getStarted"
                     android:layout_width="150dp"
@@ -77,13 +73,12 @@
                     android:layout_marginBottom="5dp"
                     android:background="@drawable/element_outline"
                     android:layout_weight="1"
-                    android:text="Get Started"
+                    android:text="@string/get_started"
                     android:textStyle="bold"
                     android:textColor="@color/colorBlack"
-                    android:textSize="12dp"/>
+                    android:textSize="12sp"/>
 
             </LinearLayout>
-        </LinearLayout>
     </RelativeLayout>
 
 
