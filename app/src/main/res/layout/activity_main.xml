@@ -57,17 +57,16 @@
                 <Button
                     android:id="@+id/Tutorial"
                     android:layout_width="150dp"
-                    android:layout_height="50dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="5dp"
-                    android:background="@drawable/element_outline"
                     android:layout_weight="1"
+                    android:background="@drawable/element_outline"
                     android:text="Tutorial"
-                    android:onClick="TutorialPressed"
-                    android:textStyle="bold"
                     android:textColor="@color/colorBlack"
-                    android:textSize="12dp"/>
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
                 <Button
                     android:id="@+id/getStarted"
                     android:layout_width="150dp"
@@ -78,10 +77,10 @@
                     android:background="@drawable/element_outline"
                     android:layout_weight="1"
                     android:text="Get Started"
-                    android:onClick="GetstartedPressed"
                     android:textStyle="bold"
                     android:textColor="@color/colorBlack"
                     android:textSize="12dp"/>
+
 
             </LinearLayout>
         </LinearLayout>
