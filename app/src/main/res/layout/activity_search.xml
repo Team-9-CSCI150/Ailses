@@ -6,4 +6,32 @@
     android:layout_height="match_parent"
     tools:context=".SearchActivity">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/search"
+        android:visibility="visible"
+        android:layout_marginStart="127dp"
+        android:layout_marginLeft="127dp"
+        android:layout_marginEnd="127dp"
+        android:layout_marginRight="127dp"
+        android:layout_marginBottom="86dp"
+        android:gravity="center"
+        tools:layout_editor_absoluteX="165dp"
+        tools:layout_editor_absoluteY="265dp" />
+
+    <SearchView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="190dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
