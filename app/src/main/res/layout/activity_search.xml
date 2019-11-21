@@ -6,17 +6,43 @@
     android:layout_height="match_parent"
     tools:context=".SearchActivity">
 
+    <menu
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <item android:title="@string/menu"
+            android:id="@+id/action_menu"
+            app:showAsAction="never"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></item>
+
+        <item android:title="@string/settings"
+            android:id="@+id/action_settings"
+            app:showAsAction="never"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></item>
+
+        <item android:title="@string/help"
+            android:id="@+id/action_help"
+            app:showAsAction="never"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></item>
+
+    </menu>
+
     <ImageView
         android:id="@+id/imageView"
-        android:contentDescription="@string/app_name"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:contentDescription="@string/app_name"
         android:scaleType="centerCrop"
         android:src="@drawable/background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/button2"
@@ -24,6 +50,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="127dp"
         android:layout_marginLeft="127dp"
+        android:layout_marginTop="224dp"
         android:layout_marginEnd="127dp"
         android:layout_marginRight="127dp"
         android:layout_marginBottom="346dp"
@@ -33,7 +60,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/searchView"
         app:layout_constraintStart_toStartOf="@+id/searchView"
-        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
 
     <SearchView
         android:id="@+id/searchView"
@@ -47,19 +74,28 @@
         android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="1.0" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
-        android:layout_width="266dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="3dp"
-        android:layout_marginLeft="3dp"
-        android:layout_marginTop="13dp"
-        android:layout_marginBottom="152dp"
-        app:layout_constraintBottom_toTopOf="@+id/searchView"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/ailses"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/colorBlack"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView" tools:targetApi="jelly_bean" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
