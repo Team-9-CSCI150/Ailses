@@ -6,29 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".SearchActivity">
 
-    <menu
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
 
-        <item android:title="@string/menu"
-            android:id="@+id/action_menu"
-            app:showAsAction="never"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"></item>
-
-        <item android:title="@string/settings"
-            android:id="@+id/action_settings"
-            app:showAsAction="never"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"></item>
-
-        <item android:title="@string/help"
-            android:id="@+id/action_help"
-            app:showAsAction="never"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"></item>
-
-    </menu>
 
     <ImageView
         android:id="@+id/imageView"
@@ -43,6 +21,35 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
+
+    <menu
+        android:layout_width="54dp"
+        android:layout_height="49dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <item
+            android:id="@+id/action_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:title="@string/menu"
+            app:showAsAction="never"></item>
+
+        <item
+            android:id="@+id/action_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:title="@string/settings"
+            app:showAsAction="never"></item>
+
+        <item
+            android:id="@+id/action_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:title="@string/help"
+            app:showAsAction="never"></item>
+
+    </menu>
 
     <Button
         android:id="@+id/button2"
