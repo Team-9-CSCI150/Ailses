@@ -23,4 +23,7 @@
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
     <string name="search">Search</string>
+    <string name="help">Help</string>
+    <string name="todo">TODO</string>
+    <string name="contact">Contact</string>
 </resources>
