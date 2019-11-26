@@ -49,7 +49,7 @@ public class FirebaseDatabaseHelper {
             public void onCancelled(@NonNull DatabaseError databaseError) {
 
             }
-        })
+        });
 
     }
 
