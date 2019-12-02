@@ -15,15 +15,15 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_location);
+        setContentView(R.layout.activity_main);
         Button getStarted =  findViewById(R.id.getStarted);
         getStarted.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
                 System.out.println("Button Clicked");
 
-            Intent activitySearchIntent = new Intent(getApplicationContext(),SearchActivity.class);
-                    startActivity(activitySearchIntent);
+            Intent activityLocationIntent = new Intent(getApplicationContext(),LocationActivity.class);
+                    startActivity(activityLocationIntent);
             }
         });
     }

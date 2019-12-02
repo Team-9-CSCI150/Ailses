@@ -13,16 +13,16 @@ public class LocationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_location);
-
-        Button getStarted =  findViewById(R.id.getStarted);
-        getStarted.setOnClickListener(new View.OnClickListener() {
+        Button enterr =  findViewById(R.id.button3);
+        enterr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
                 System.out.println("Button Clicked");
 
-                Intent activityLocationIntent = new Intent(getApplicationContext(),LocationActivity.class);
-                startActivity(activityLocationIntent);
+                Intent activitySearchIntent = new Intent(getApplicationContext(),SearchActivity.class);
+                startActivity(activitySearchIntent);
             }
         });
+
     }
 }
