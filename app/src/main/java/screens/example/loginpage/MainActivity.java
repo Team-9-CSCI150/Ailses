@@ -12,7 +12,6 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {
 
-    // Write a message to the database
 
 
     @Override
@@ -24,10 +23,14 @@ public class MainActivity extends AppCompatActivity {
         Button getStarted =  findViewById(R.id.getStarted);
         getStarted.setOnClickListener(new View.OnClickListener() {
            public void onClick(View v){
-                System.out.println("Button Clicked");
+                //System.out.println("Button Clicked");
 
-            Intent activityLocationIntent = new Intent(getApplicationContext(),LocationActivity.class);
-                    startActivity(activityLocationIntent);
+                startActivity(new Intent(MainActivity.this, FoodActivity.class));
+               Intent intent = new Intent(getApplicationContext(), FoodActivity.class);
+               startActivity(intent);
+
+            //Intent activityLocationIntent = new Intent(getApplicationContext(),LocationActivity.class);
+            //        startActivity(activityLocationIntent);
             }
         });
     }
