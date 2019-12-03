@@ -25,7 +25,7 @@ public class LocationActivity extends AppCompatActivity {
 
     }
     public void openSearchActivity(){
-        Intent activitySearchIntent = new Intent(this,activity_help.class);
+        Intent activitySearchIntent = new Intent(this,SearchActivity.class);
         startActivity(activitySearchIntent);
 
     }

@@ -7,40 +7,43 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 
 public class SearchActivity extends AppCompatActivity {
+    private Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
+
     }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.options, menu);
-        return super.onCreateOptionsMenu(menu);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-
-        int id = item.getItemId();
-        if(id == R.id.action_menu){
-            Intent homeIntent = new Intent(SearchActivity.this, MainActivity.class);
-            startActivity(homeIntent);
+        @Override
+        public boolean onCreateOptionsMenu (Menu menu){
+            getMenuInflater().inflate(R.menu.options, menu);
+            return super.onCreateOptionsMenu(menu);
         }
 
-        if(id == R.id.action_help){
-            Intent helpIntent = new Intent(SearchActivity.this, activity_help.class);
-            startActivity(helpIntent);
+        @Override
+        public boolean onOptionsItemSelected (@NonNull MenuItem item){
+
+            int id = item.getItemId();
+            if (id == R.id.action_menu) {
+                Intent homeIntent = new Intent(SearchActivity.this, MainActivity.class);
+                startActivity(homeIntent);
+            }
+
+            if (id == R.id.action_help) {
+                Intent helpIntent = new Intent(SearchActivity.this, activity_help.class);
+                startActivity(helpIntent);
+            }
+
+            if (id == R.id.action_settings) {
+                Intent settingsIntent = new Intent(SearchActivity.this, SettingsActivity.class);
+                startActivity(settingsIntent);
+            }
+
+            return super.onOptionsItemSelected(item);
         }
 
-        if(id == R.id.action_settings){
-            Intent settingsIntent = new Intent(SearchActivity.this, SettingsActivity.class);
-            startActivity(settingsIntent);
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
 }
