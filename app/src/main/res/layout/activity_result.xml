@@ -40,7 +40,7 @@
             android:textSize="16dp"
             android:textColor="#a9a9a9"
             android:layout_toRightOf="@+id/imageIv"
-            android:layout_end="@+id/imageIv"
+            android:layout_toEndOf="@+id/imageIv"
             android:layout_marginLeft="10dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
