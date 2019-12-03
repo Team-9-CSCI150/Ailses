@@ -9,29 +9,35 @@
     app:cardUseCompatPadding="true"
     >
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="407dp"
+        android:layout_height="651dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
     <RelativeLayout
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:padding="16dp"
-    >
-    <ImageView
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:id="@+id/imageIv"
-        android:src="@mipmap/ic_launcher"/>
+        android:padding="16dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/titleTv"
-        android:text="Title"
-        android:textSize="22sp"
-        android:textColor="#000"
-        android:textStyle="bold"
-        android:layout_toRightOf="@+id/imageIv"
-        android:layout_marginLeft="10dp"
-        android:layout_marginStart="10dp"
-        />
+        <ImageView
+             android:layout_width="75dp"
+             android:layout_height="75dp"
+             android:id="@+id/imageIv"
+             android:src="@mipmap/ic_launcher"/>
+
+         <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/titleTv"
+              android:text="Title"
+              android:textSize="22sp"
+              android:textColor="#000"
+              android:textStyle="bold"
+              android:layout_toRightOf="@+id/imageIv"
+              android:layout_marginLeft="10dp"
+               android:layout_marginStart="10dp" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
