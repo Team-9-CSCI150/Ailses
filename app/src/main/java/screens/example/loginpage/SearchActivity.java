@@ -28,7 +28,7 @@ public class SearchActivity extends AppCompatActivity {
         public boolean onOptionsItemSelected (@NonNull MenuItem item){
 
             int id = item.getItemId();
-            if (id == R.id.action_menu) {
+            if (id == R.id.action_home) {
                 Intent homeIntent = new Intent(SearchActivity.this, MainActivity.class);
                 startActivity(homeIntent);
             }
