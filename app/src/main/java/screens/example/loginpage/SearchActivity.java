@@ -7,29 +7,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Button;
 
 public class SearchActivity extends AppCompatActivity {
-    private Button button2;
+    private Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
-
-        button2 = (Button) findViewById(R.id.button2);
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openSearchActivity();
-            }
-        });
-
-    }
-    public void openSearchActivity(){
-        Intent activityFoodIntent = new Intent(this,FoodActivity.class);
-        startActivity(activityFoodIntent);
 
     }
         @Override

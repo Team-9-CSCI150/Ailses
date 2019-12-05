@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Login page</string>
+    <string name="app_name">Ailses</string>
     <string name="zip_code">Zip Code</string>
     <string name="city">City</string>
     <string name="turn_on_gps">Turn On GPS</string>

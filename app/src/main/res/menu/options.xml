@@ -2,8 +2,8 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item android:title="@string/menu"
-        android:id="@+id/action_menu"
+    <item android:title="Home"
+        android:id="@+id/action_home"
         app:showAsAction="never" ></item>
 
     <item android:title="@string/settings"

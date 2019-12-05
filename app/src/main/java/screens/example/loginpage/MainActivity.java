@@ -29,8 +29,8 @@ public class MainActivity extends AppCompatActivity {
               // Intent intent = new Intent(getApplicationContext(), FoodActivity.class);
              //  startActivity(intent);
 
-            Intent activityLocationIntent = new Intent(getApplicationContext(),LocationActivity.class);
-                    startActivity(activityLocationIntent);
+                Intent activityLocationIntent = new Intent(getApplicationContext(),LocationActivity.class);
+                startActivity(activityLocationIntent);
             }
         });
         tuturial.setOnClickListener(new View.OnClickListener() {
