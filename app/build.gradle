@@ -1,5 +1,6 @@
 apply plugin: 'com.android.application'
 
+
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
@@ -33,6 +34,8 @@ dependencies {
     implementation 'com.google.firebase:firebase-database:19.2.0'
     implementation 'com.firebase:firebase-client-android:2.5.0'
     implementation 'com.android.support:recyclerview-v7:+'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
 }
 configurations.all {
     resolutionStrategy {
@@ -40,4 +43,4 @@ configurations.all {
     }
 }
 
-apply plugin: 'com.google.gms.google-services'
+

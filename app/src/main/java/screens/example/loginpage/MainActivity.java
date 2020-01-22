@@ -21,20 +21,31 @@ public class MainActivity extends AppCompatActivity {
         // add logic here....
 
         Button getStarted =  findViewById(R.id.getStarted);
+        Button tuturial =  findViewById(R.id.Tutorial);
         getStarted.setOnClickListener(new View.OnClickListener() {
            public void onClick(View v){
                 //System.out.println("Button Clicked");
 
-                startActivity(new Intent(MainActivity.this, FoodActivity.class));
-               Intent intent = new Intent(getApplicationContext(), FoodActivity.class);
-               startActivity(intent);
+              // Intent intent = new Intent(getApplicationContext(), FoodActivity.class);
+             //  startActivity(intent);
 
-            //Intent activityLocationIntent = new Intent(getApplicationContext(),LocationActivity.class);
-            //        startActivity(activityLocationIntent);
+                Intent activityLocationIntent = new Intent(getApplicationContext(),LocationActivity.class);
+                startActivity(activityLocationIntent);
+            }
+        });
+        tuturial.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v){
+                //System.out.println("Button Clicked");
+
+                Intent activityHelpIntent = new Intent(getApplicationContext(),activity_help.class);
+                startActivity(activityHelpIntent);
             }
         });
     }
 }
+
+
+
 /*
 
     Button btnInsert = (Button) findViewById(R.id.getStarted);
@@ -44,11 +55,4 @@ public void  onClick(View v) {
         // Write a message to the database
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference("message");
-
-        myRef.setValue("Hello, World!, Android");
-        }
-        });
-        }
-        }
-
-         */
+*/
