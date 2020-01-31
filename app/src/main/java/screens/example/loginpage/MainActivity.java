@@ -24,10 +24,7 @@ public class MainActivity extends AppCompatActivity {
         Button tuturial =  findViewById(R.id.Tutorial);
         getStarted.setOnClickListener(new View.OnClickListener() {
            public void onClick(View v){
-                //System.out.println("Button Clicked");
 
-              // Intent intent = new Intent(getApplicationContext(), FoodActivity.class);
-             //  startActivity(intent);
 
                 Intent activityLocationIntent = new Intent(getApplicationContext(),LocationActivity.class);
                 startActivity(activityLocationIntent);
@@ -35,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         });
         tuturial.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v){
-                //System.out.println("Button Clicked");
+
 
                 Intent activityHelpIntent = new Intent(getApplicationContext(),activity_help.class);
                 startActivity(activityHelpIntent);

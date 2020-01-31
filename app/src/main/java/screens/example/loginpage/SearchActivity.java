@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 
 public class SearchActivity extends AppCompatActivity {
@@ -17,12 +18,27 @@ public class SearchActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
 
+        button = (Button) findViewById(R.id.button2);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openFoodActivity();
+            }
+        });
+
+
+    }
+    public void openFoodActivity(){
+        Intent activityFoodIntent = new Intent(this,FoodActivity.class);
+        startActivity(activityFoodIntent);
+
     }
         @Override
         public boolean onCreateOptionsMenu (Menu menu){
             getMenuInflater().inflate(R.menu.options, menu);
             return super.onCreateOptionsMenu(menu);
         }
+
 
         @Override
         public boolean onOptionsItemSelected (@NonNull MenuItem item){
